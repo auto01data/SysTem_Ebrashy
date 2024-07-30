@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}SysTem Ebrashy{% endblock %}</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .footer {
+      background: #343a40;
+      color: white;
+      padding: 40px 0;
+    }
+    .footer a {
+      color: white;
+    }
+    .footer a:hover {
+      color: #d3d3d3;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">SysTem Ebrashy</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            More
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/about">About</a>
+            <a class="dropdown-item" href="#">Contact</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-5">
+    {% block content %}{% endblock %}
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>About Us</h5>
+          <p>At SysTem Ebrashy, we strive to be the premier partner for businesses leveraging technology to drive growth, efficiency, and innovation. Our mission is to deliver superior technology solutions through innovation, expertise, and a steadfast commitment to customer satisfaction. We focus on building long-term relationships, understanding our clients' needs, and providing customized solutions that offer real value.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact Us</h5>
+          <address>
+            Albateen St.<br>
+            Abu Dhabi, UAE<br>
+            Email: <a href="mailto:ahmed.elabrashy88@gmail.com">ahmed.elabrashy88@gmail.com</a>
+          </address>
+          <div>
+            <a href="#" class="mr-2"><img src="https://via.placeholder.com/24" alt="Facebook"></a>
+            <a href="#" class="mr-2"><img src="https://via.placeholder.com/24" alt="Twitter"></a>
+            <a href="#"><img src="https://via.placeholder.com/24" alt="LinkedIn"></a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <p>&copy; 2024 SysTem Ebrashy. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
